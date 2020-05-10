@@ -1,6 +1,8 @@
-## mgteditor-webpart
+## Microsoft Graph Toolkit Editor Web part
 
-This is where you include your WebPart documentation.
+The output of the web part,
+![Microsoft Graph Toolkit Editor Web part output](http://github.com/ktskumar/Images/blob/master/blog/202005/mgt%20webpart%20output.gif?raw=true)
+
 
 ### Building the code
 
