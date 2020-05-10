@@ -1,7 +1,7 @@
 ## Microsoft Graph Toolkit Editor Web part
 
 The output of the web part,
-![Microsoft Graph Toolkit Editor Web part output](http://github.com/ktskumar/Images/blob/master/blog/202005/mgt%20webpart%20output.gif?raw=true)
+![Microsoft Graph Toolkit Editor Web part output](https://raw.githubusercontent.com/ktskumar/Images/master/blog/202005/mgt%20webpart%20output.gif)
 
 
 ### Building the code
