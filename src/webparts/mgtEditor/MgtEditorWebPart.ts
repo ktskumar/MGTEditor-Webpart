@@ -1,16 +1,14 @@
 import { Version } from '@microsoft/sp-core-library';
 import {
-  IPropertyPaneConfiguration,
-  PropertyPaneTextField
+  IPropertyPaneConfiguration
 } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { escape } from '@microsoft/sp-lodash-subset';
 import styles from './MgtEditorWebPart.module.scss';
 import * as strings from 'MgtEditorWebPartStrings';
-import { Providers, SharePointProvider } from '@microsoft/mgt';
+//import { Providers, SharePointProvider } from '@microsoft/mgt';
+import { Providers, SharePointProvider } from '@microsoft/mgt-spfx';
 import { PropertyFieldCodeEditor, PropertyFieldCodeEditorLanguages } from '@pnp/spfx-property-controls/lib/PropertyFieldCodeEditor';
-import { WebPartTitle } from "@pnp/spfx-controls-react/lib/WebPartTitle";
-import { DisplayMode } from '@microsoft/sp-core-library';
+
 
 export interface IMgtEditorWebPartProps {  
   htmlCode: string;
@@ -19,8 +17,11 @@ export interface IMgtEditorWebPartProps {
 
 export default class MgtEditorWebPart extends BaseClientSideWebPart<IMgtEditorWebPartProps> {
 
-  protected async onInit() {
-    Providers.globalProvider = new SharePointProvider(this.context);
+  protected async onInit() {     
+      //Providers.globalProvider = new SharePointProvider(this.context);
+      if (!Providers.globalProvider) {
+        Providers.globalProvider = new SharePointProvider(this.context);
+      }
   }
 
   public render(): void {
@@ -29,6 +30,7 @@ export default class MgtEditorWebPart extends BaseClientSideWebPart<IMgtEditorWe
       <div class="${ styles.mgtEditor}">
         <div class="${ styles.container}">
           <div class="${ styles.row}">      
+          
             ${this.properties.htmlCode != undefined ? this.properties.htmlCode : ""}
           </div>
         </div>      
@@ -39,6 +41,8 @@ export default class MgtEditorWebPart extends BaseClientSideWebPart<IMgtEditorWe
     newScript.appendChild(inlineScript);
     this.domElement.appendChild(newScript);
   }
+
+
 
   protected get dataVersion(): Version {
     return Version.parse('1.0');

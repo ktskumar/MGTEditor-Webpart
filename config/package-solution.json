@@ -3,9 +3,16 @@
   "solution": {
     "name": "Microsoft Graph Toolkit Editor",
     "id": "55ea391d-c3a2-4413-bf13-3877132bc52f",
-    "version": "1.0.0.1",
+    "version": "1.0.0.2",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
     "webApiPermissionRequests": [
       {
         "resource": "Microsoft Graph",
@@ -43,8 +50,7 @@
         "resource": "Microsoft Graph",
         "scope": "Files.Read.All"
       }
-    ]
-  },
+    ]  
   },
   "paths": {
     "zippedPackage": "solution/mgteditor-webpart.sppkg"
