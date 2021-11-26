@@ -1,8 +1,9 @@
 {
   "@microsoft/generator-sharepoint": {
+    "plusBeta":false,
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.12.1",
+    "version": "1.13.1",
     "libraryName": "mgteditor-webpart",
     "libraryId": "55ea391d-c3a2-4413-bf13-3877132bc52f",
     "packageManager": "npm",

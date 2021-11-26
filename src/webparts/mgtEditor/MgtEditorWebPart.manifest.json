@@ -4,6 +4,7 @@
   "alias": "MgtEditorWebPart",
   "componentType": "WebPart",
 
+  "supportsThemeVariants": true,
   // The "*" signifies that the version should be taken from the package.json
   "version": "*",
   "manifestVersion": 2,
@@ -19,9 +20,9 @@
     "group": { "default": "Other" },
     "title": { "default": "Microsoft Graph Toolkit Editor" },
     "description": { "default": "Webpart for try out Microsoft Graph Toolkit components" },
-    "officeFabricIconFontName": "Page",
+    "officeFabricIconFontName": "GitGraph",
     "properties": {
-      "description": "MGT Editor"
+      "title": "MGT Editor"
     }
   }]
 }

@@ -30,5 +30,10 @@ gulp package-solution - TODO
 
 
 Ensure the Microsoft Graph Toolkit SharePoint Framework package is already deployed to your tenenat. Otherwise we will receive the error in webpart.
-[Download Microsoft Graph Toolkit for SharePoint Framework](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/download/v2.2.0/mgt-spfx-2.2.0.sppkg)
+[Download Microsoft Graph Toolkit for SharePoint Framework](https://github.com/microsoftgraph/microsoft-graph-toolkit/releases/download/v2.3.1/mgt-spfx-2.3.1.sppkg)
+
+
+## v1.3.0.0
+- Upgraded to SPFX version 1.13.1
+- Updated User Experince
 

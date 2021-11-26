@@ -1,7 +1,7 @@
 define([], function() {
   return {
-    "PropertyPaneDescription": "Description",
-    "BasicGroupName": "Group Name",
+    "PropertyPaneDescription": "Add MGT HTML and JS snippets",
+    "BasicGroupName": "Properties",
     "DescriptionFieldLabel": "Description Field"
   }
 });
