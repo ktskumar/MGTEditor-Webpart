@@ -1,6 +1,6 @@
 {
   "name": "mgteditor-webpart",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "private": true,
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "gulp test"
   },
   "dependencies": {
-    "@microsoft/mgt-spfx": "^2.3.1",
+    "@microsoft/mgt-spfx": "2.3.1",
     "@microsoft/sp-core-library": "1.13.1",
     "@microsoft/sp-lodash-subset": "1.13.1",
     "@microsoft/sp-office-ui-fabric-core": "1.13.1",
@@ -23,7 +23,6 @@
     "@microsoft/sp-build-web": "1.13.1",
     "@microsoft/sp-module-interfaces": "1.13.1",
     "@microsoft/sp-tslint-rules": "1.13.1",
-    "@types/es6-promise": "0.0.33",
     "@types/webpack-env": "1.13.1",
     "ajv": "~5.2.2",
     "gulp": "4.0.2"

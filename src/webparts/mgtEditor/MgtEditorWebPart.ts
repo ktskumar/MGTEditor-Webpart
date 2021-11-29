@@ -10,8 +10,7 @@ import { PropertyFieldCodeEditor, PropertyFieldCodeEditorLanguages } from '@pnp/
 import {
   ThemeProvider,
   ThemeChangedEventArgs,
-  IReadonlyTheme,
-  ISemanticColors
+  IReadonlyTheme
 } from '@microsoft/sp-component-base';
 
 export interface IMgtEditorWebPartProps {
